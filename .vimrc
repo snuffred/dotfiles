@@ -3,12 +3,11 @@ syntax enable
 set backspace=2
 set nocompatible
 set noshowmode
-set showcmd
+set showcmd 
 set number
 set relativenumber 
 set mouse=a
 set encoding=utf-8
-set t_Co=256
 set cursorline
 set laststatus=2
 set ruler
@@ -16,8 +15,10 @@ set showmatch
 set hlsearch
 set incsearch
 
-set updatetime=300
+" 24bit
+set termguicolors
 
+set updatetime=300
 filetype on
 filetype plugin on
 filetype indent on
@@ -30,7 +31,6 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
-
 
 " ---vim-plug
 call plug#begin()
@@ -46,9 +46,13 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
-Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
+
+" ---colorscheme
+set background=dark
+colorscheme solarized8
 
 " ---airline
 let g:airline_theme = "solarized"
@@ -234,9 +238,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
 
-" ---colorscheme
-set background=dark
-colorscheme solarized
 
 " ---sneak
 map f <Plug>Sneak_s
