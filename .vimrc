@@ -32,6 +32,13 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+noremap <silent> <C-S-Left> :vertical resize +5<CR>
+noremap <silent> <C-S-Right> :vertical resize -5<CR>
+noremap <silent> <C-S-Up> :horizontal resize -5<CR>
+noremap <silent> <C-S-Down> :horizontal resize +5<CR>
+" noremap <silent> <C-Left> :vertical resize +1<CR>
+" noremap <silent> <C-Right> :vertical resize -1<CR>
+
 " ---vim-plug
 call plug#begin()
 

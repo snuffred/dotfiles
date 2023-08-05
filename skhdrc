@@ -1,0 +1,46 @@
+# Changing Window Focus
+
+# Change window focus within space
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - h : yabai -m window --focus west 
+alt - l : yabai -m window --focus east
+
+# swap window
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - l : yabai -m window --swap east
+
+# Change focus between external displays(left and right)
+alt - 1: yabai -m display --focus 1
+alt - 2: yabai -m display --focus 2
+alt - 3: yabai -m display --focus 3
+alt - 4: yabai -m display --focus 4
+
+# 旋转窗口布局
+alt - r : yabai -m space --rotate 90
+
+# 全屏
+alt -f : yabai -m window --toggle zoom-fullscreen
+
+# 设置/取消窗口 space
+alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+# 挂起窗口至屏幕中央/取消挂起窗口
+alt - t : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:1:2:2
+
+# 修改窗口切分方式
+alt - e : yabai -m window --toggle split
+
+# 重置窗口布局
+shift + alt - 0 : yabai -m space --balance
+
+# 增加窗口大小
+shift + alt - w : yabai -m window --resize top:0:-20
+shift + alt - d : yabai -m window --resize left:-20:0
+
+# 减少窗口大小
+shift + alt - s : yabai -m window --resize bottom:0:-20
+shift + alt - a : yabai -m window --resize top:0:20
