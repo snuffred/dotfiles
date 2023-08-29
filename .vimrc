@@ -43,6 +43,7 @@ noremap <silent> <C-S-Down> :horizontal resize +5<CR>
 call plug#begin()
 
 Plug 'ycm-core/YouCompleteMe'
+Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
@@ -144,5 +145,4 @@ let g:fzf_colors =
 "   'previous-history' instead of 'down' and 'up'.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
---YcmComplete
-
+" YcmComplete
