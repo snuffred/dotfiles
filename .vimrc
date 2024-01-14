@@ -56,6 +56,7 @@ Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'lifepillar/vim-solarized8'
 Plug 'junegunn/fzf'
+Plug 'lervag/vimtex'
 
 call plug#end()
 
