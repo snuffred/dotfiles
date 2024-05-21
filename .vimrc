@@ -42,7 +42,6 @@ noremap <silent> <C-S-Down> :horizontal resize +5<CR>
 " ---vim-plug
 call plug#begin()
 
-Plug 'ycm-core/YouCompleteMe'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -52,11 +51,10 @@ Plug 'yianwillis/vimcdoc'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'dense-analysis/ale'
-Plug 'sheerun/vim-polyglot'
+" Plug 'dense-analysis/ale'
+" Plug 'sheerun/vim-polyglot'
 Plug 'lifepillar/vim-solarized8'
 Plug 'junegunn/fzf'
-Plug 'lervag/vimtex'
 
 call plug#end()
 
@@ -83,7 +81,7 @@ nmap <leader>t :TagbarToggle<CR>
 
 " ---ALE
 " Set this. Airline will handle the rest.
-let g:airline#extensions#ale#enabled = 1
+" let g:airline#extensions#ale#enabled = 1
 
 " ---fzf
 " This is the default extra key bindings
@@ -145,5 +143,3 @@ let g:fzf_colors =
 " - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
 "   'previous-history' instead of 'down' and 'up'.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
-
-" YcmComplete
