@@ -51,10 +51,10 @@ Plug 'yianwillis/vimcdoc'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" Plug 'dense-analysis/ale'
-" Plug 'sheerun/vim-polyglot'
 Plug 'lifepillar/vim-solarized8'
-Plug 'junegunn/fzf'
+" Plug 'junegunn/fzf'
+Plug 'girishji/vimcomplete'
+Plug 'yegappan/lsp'
 
 call plug#end()
 
