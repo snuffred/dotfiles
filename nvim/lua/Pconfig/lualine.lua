@@ -1,9 +1,9 @@
-require('lualine').setup{
+require('lualine').setup {
   --options = {
-   -- theme = '',
+  -- theme = '',
   --}
 
-options = {
+  options = {
     icons_enabled = true,
     theme = 'auto',
     component_separators = { left = '', right = '' },
@@ -36,10 +36,10 @@ options = {
       'encoding',
       { 'fileformat',
         symbols = {
-					unix = '', -- e712
-        dos = '',  -- e70f
-        mac = '',  -- e711
-	          },
+          mac = '', -- e711
+          unix = '', -- e712
+          dos = '', -- e70f
+        },
       },
       'filetype'
     },
