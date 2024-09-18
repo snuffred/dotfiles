@@ -1,7 +1,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'auto',
+    theme = 'catppuccin',
     component_separators = { left = '', right = '' },
     section_separators = { left = '', right = '' },
     disabled_filetypes = {
@@ -23,22 +23,27 @@ require('lualine').setup {
     lualine_b = { 'branch', 'diff', 'diagnostics' },
     lualine_c = {
       'filename',
-      {
-        "lsp_progress",
-        spinner_symbols = { " ", " ", " ", " ", " ", " " },
-      },
+      -- {
+      --   "lsp_progress",
+      --   spinner_symbols = { " ", " ", " ", " ", " ", " " },
+      -- },
     },
     lualine_x = {
       'filesize',
       'encoding',
-      {
-        'fileformat',
-        symbols = {
-          mac = '', -- e711
-          unix = '', -- e712
-          dos = '', -- e70f
-        },
-      },
+      -- {
+      --   'fileformat',
+      --   -- symbols = {
+      --   --   mac = '', -- e711
+      --   --   unix = '', -- e712
+      --   --   dos = '', -- e70f
+      --   -- },
+      --   symbols = {
+      --     unix = "LF",
+      --     dos = "CRLF",
+      --     mac = "CR",
+      --   },
+      -- },
       'filetype'
     },
     lualine_y = { 'progress' },
