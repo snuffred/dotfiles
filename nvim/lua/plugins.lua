@@ -37,13 +37,21 @@ require("lazy").setup(
 
         'lewis6991/gitsigns.nvim',
 
-        --LSP
+        -- LSP
         'neovim/nvim-lspconfig',
         'nvimdev/lspsaga.nvim',
+
+        -- Mason
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
+        'WhoIsSethDaniel/mason-tool-installer.nvim',
+        'jay-babu/mason-null-ls.nvim',
+        'jay-babu/mason-nvim-dap.nvim',
 
-        --complete
+        -- null-ls
+        'nvimtools/none-ls.nvim',
+
+        -- complete
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-path',
@@ -56,7 +64,7 @@ require("lazy").setup(
 
 
         -- colorscheme with settings
-        { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+        { "catppuccin/nvim",    name = "catppuccin" }
     })
 
 --plugins-config
