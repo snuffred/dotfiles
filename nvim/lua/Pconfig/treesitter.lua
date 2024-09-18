@@ -22,3 +22,5 @@ require('nvim-treesitter.configs').setup{
   },
 
 }
+
+require('contextTreesitter')

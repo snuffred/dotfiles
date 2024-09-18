@@ -17,11 +17,15 @@ require("lazy").setup(
     {
         { "folke/neoconf.nvim", cmd = "Neoconf" },
         "folke/neodev.nvim",
+
         "nvim-lualine/lualine.nvim",
         'akinsho/bufferline.nvim',
+
         'nvim-tree/nvim-web-devicons',
         "moll/vim-bbye",
+
         "nvim-treesitter/nvim-treesitter",
+        "nvim-treesitter/nvim-treesitter-context",
         "nvim-telescope/telescope.nvim",
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-tree.lua",
