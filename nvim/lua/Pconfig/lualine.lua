@@ -32,7 +32,7 @@ require('lualine').setup {
       'filesize',
       'encoding',
       -- {
-        -- 'fileformat',
+      -- 'fileformat',
       --   -- symbols = {
       --   --   mac = '', -- e711
       --   --   unix = '', -- e712
@@ -61,5 +61,5 @@ require('lualine').setup {
   tabline = {},
   winbar = {},
   inactive_winbar = {},
-  extensions = {}
+  extensions = { 'nvim-tree', 'fzf', 'mason', 'lazy' },
 }

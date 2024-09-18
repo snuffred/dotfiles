@@ -26,12 +26,16 @@ require("lazy").setup(
 
         "nvim-treesitter/nvim-treesitter",
         "nvim-treesitter/nvim-treesitter-context",
+
         "nvim-telescope/telescope.nvim",
         "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope-fzf-native.nvim",
+
         "nvim-tree/nvim-tree.lua",
 
         'windwp/nvim-autopairs',
 
+        'lewis6991/gitsigns.nvim',
 
         --LSP
         'neovim/nvim-lspconfig',

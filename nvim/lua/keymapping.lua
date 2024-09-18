@@ -46,11 +46,6 @@ map("n", "<leader>h", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<leader>l", ":BufferLineCycleNext<CR>", opt)
 map("n", "<leader>w", ":Bdelete!<CR>", opt)
 
---telescope
--- 查找文件
-map("n", "<C-p>", ":Telescope find_files<CR>", opt)
--- 全局搜索
-map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 
 --lspsaga
 map('n', 'K', '<cmd>Lspsaga hover_doc<CR>', opt)

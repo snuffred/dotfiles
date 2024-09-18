@@ -1,7 +1,7 @@
 require("nvim-tree").setup({
     -- 不显示 git 状态图标
     git = {
-        enable = false,
+        enable = true,
     },
     -- project plugin 需要这样设置
     update_cwd = true,
@@ -9,9 +9,10 @@ require("nvim-tree").setup({
         enable = true,
         update_cwd = true,
     },
-    -- 隐藏 .文件 
+    -- 隐藏 .文件
     filters = {
-        dotfiles = true,
+        dotfiles = false,
+        custom = { "^.git$" },
     },
     view = {
         -- 宽度
@@ -36,8 +37,3 @@ require("nvim-tree").setup({
         cmd = 'open', -- mac 直接设置为 open
     },
 })
-
--- 自动关闭
-vim.cmd([[
-  autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
-]])

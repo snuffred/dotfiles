@@ -23,4 +23,11 @@ require('nvim-treesitter.configs').setup{
 
 }
 
-require('contextTreesitter')
+-- Folding module
+-- vim.wo.foldmethod = 'expr'
+-- vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
+-- module treesitter-context
+require('treesitter-context').setup{
+    enable = true,
+}
