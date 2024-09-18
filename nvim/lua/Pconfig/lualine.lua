@@ -1,8 +1,4 @@
 require('lualine').setup {
-  --options = {
-  -- theme = '',
-  --}
-
   options = {
     icons_enabled = true,
     theme = 'auto',
@@ -21,6 +17,7 @@ require('lualine').setup {
       winbar = 1000,
     }
   },
+
   sections = {
     lualine_a = { 'mode' },
     lualine_b = { 'branch', 'diff', 'diagnostics' },
@@ -47,6 +44,7 @@ require('lualine').setup {
     lualine_y = { 'progress' },
     lualine_z = { 'location' }
   },
+
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
@@ -59,5 +57,4 @@ require('lualine').setup {
   winbar = {},
   inactive_winbar = {},
   extensions = {}
-
 }
