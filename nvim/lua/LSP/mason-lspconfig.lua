@@ -3,7 +3,7 @@ require("mason-lspconfig").setup {
         "lua_ls",
         "rust_analyzer",
         "ltex",
-        "typst-lsp",
+        "typst_lsp",
     },
     automatic_installation = true,
 }
