@@ -32,7 +32,7 @@ require('lualine').setup {
       'filesize',
       'encoding',
       -- {
-      --   'fileformat',
+        -- 'fileformat',
       --   -- symbols = {
       --   --   mac = '', -- e711
       --   --   unix = '', -- e712
