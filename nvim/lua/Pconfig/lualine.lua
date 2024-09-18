@@ -34,7 +34,8 @@ require('lualine').setup {
     lualine_x = {
       'filesize',
       'encoding',
-      { 'fileformat',
+      {
+        'fileformat',
         symbols = {
           mac = '', -- e711
           unix = '', -- e712
