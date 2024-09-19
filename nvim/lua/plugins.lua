@@ -50,6 +50,7 @@ require("lazy").setup(
 
         -- null-ls
         'nvimtools/none-ls.nvim',
+        'nvimtools/none-ls-extras.nvim',
 
         -- complete
         'hrsh7th/cmp-nvim-lsp',
