@@ -72,6 +72,7 @@ require("lazy").setup({
 
 	-- Media
 	"edluffy/hologram.nvim",
+	"3rd/image.nvim",
 })
 
 --plugins-config
