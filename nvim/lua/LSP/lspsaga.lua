@@ -1,3 +1,2 @@
-require('lspsaga').setup{
+require("lspsaga").setup({})
 
-}

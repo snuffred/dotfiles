@@ -1,39 +1,37 @@
-require('mason-tool-installer').setup {
-    ensure_installed = {
-        -- LSP
+require("mason-tool-installer").setup({
+	ensure_installed = {
+		-- LSP
 
-        "lua_ls",
-        "rust_analyzer",
-        "ltex",
-        "typst-lsp",
-        "clangd",
-        "pyright",
+		"lua_ls",
+		"rust_analyzer",
+		"ltex",
+		"typst-lsp",
+		"clangd",
+		"pyright",
 
+		-- DAP
+		"cpptools",
 
-        -- DAP
-        'cpptools',
+		-- Linter
+		"ast-grep",
+		"cpplint",
+		"cspell",
 
-        -- Linter
-        'ast-grep',
-        'cpplint',
-        'cspell',
+		-- formatter
+		"stylua",
+		"clang-format",
+		"latexindent",
+		"markdownlint", -- also included in linter
+		"beautysh",
+		"prettier",
+	},
 
+	auto_update = false,
 
-        -- formatter
-        'stylua',
-        'clang-format',
-        'latexindent',
-        'markdownlint',     -- also included in linter
-        'beautysh',
-        'prettier',
-    },
+	run_on_start = true,
 
-    auto_update = false,
-
-    run_on_start = true,
-
-    integrations = {
-        ['mason-lspconfig'] = true,
-        ['mason-nvim-dap'] = true,
-    },
-}
+	integrations = {
+		["mason-lspconfig"] = true,
+		["mason-nvim-dap"] = true,
+	},
+})
