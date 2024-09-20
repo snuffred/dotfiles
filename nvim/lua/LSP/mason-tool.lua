@@ -5,28 +5,27 @@ require('mason-tool-installer').setup {
         "lua_ls",
         "rust_analyzer",
         "ltex",
-        "typst_lsp",
+        "typst-lsp",
         "clangd",
         "pyright",
 
 
         -- DAP
+        'cpptools',
 
         -- Linter
-
-        'ast_grep',
+        'ast-grep',
+        'cpplint',
+        'cspell',
 
 
         -- formatter
-
         'stylua',
-        'clang_format',
+        'clang-format',
         'latexindent',
-        'markdownlint',     -- also included linter
+        'markdownlint',     -- also included in linter
         'beautysh',
-        'nixpkgs-fmt',
         'prettier',
-
     },
 
     auto_update = false,
@@ -35,7 +34,6 @@ require('mason-tool-installer').setup {
 
     integrations = {
         ['mason-lspconfig'] = true,
-        ['mason-null-ls'] = true,
         ['mason-nvim-dap'] = true,
     },
 }

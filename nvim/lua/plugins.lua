@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
     {
-        { "folke/neoconf.nvim", cmd = "Neoconf" },
+        "folke/neoconf.nvim",
         "folke/neodev.nvim",
 
         "nvim-lualine/lualine.nvim",
@@ -45,12 +45,14 @@ require("lazy").setup(
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
         'WhoIsSethDaniel/mason-tool-installer.nvim',
-        'jay-babu/mason-null-ls.nvim',
         'jay-babu/mason-nvim-dap.nvim',
 
-        -- null-ls
-        'nvimtools/none-ls.nvim',
-        'nvimtools/none-ls-extras.nvim',
+        --formatter
+        'stevearc/conform.nvim',
+        'zapling/mason-conform.nvim',
+
+        --lint
+        'mfussenegger/nvim-lint',
 
         -- complete
         'hrsh7th/cmp-nvim-lsp',
@@ -59,9 +61,9 @@ require("lazy").setup(
         'hrsh7th/cmp-cmdline',
         'hrsh7th/nvim-cmp',
 
-        -- For vsnip users.
-        'hrsh7th/cmp-vsnip',
-        'hrsh7th/vim-vsnip',
+        -- luasnip
+        'L3MON4D3/LuaSnip',
+        'saadparwaiz1/cmp_luasnip',
 
 
         -- colorscheme with settings
@@ -76,3 +78,4 @@ require('Pconfig.telescope')
 require('Pconfig.treesitter')
 require('Pconfig.nvim-cmp')
 require('Pconfig.autopairs')
+require('Pconfig.gitsigns')

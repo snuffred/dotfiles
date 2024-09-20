@@ -1,9 +1,9 @@
-require('basic')
+require("basic")
 
-require('keymapping')
+require("keymapping")
 
-require('plugins')
+require("plugins")
 
-require('configlsp')
+require("configlsp")
 
-require('colorscheme')
+require("colorscheme")
