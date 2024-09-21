@@ -20,4 +20,3 @@ vim.o.wildmenu = true
 vim.opt.signcolumn = "yes"
 
 vim.cmd("filetype plugin indent on")
-

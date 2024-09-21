@@ -4,9 +4,12 @@ require("conform").setup({
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		python = { "isort", "black" },
-		javascript = { "prettierd", "prettier", stop_after_first = true },
+		javascript = { "prettier" },
 		tex = { "latexindent" },
 		markdown = { "markdown-toc" },
+		html = { "prettier" },
+		json = { "prettier" },
+		css = { "prettier" },
 	},
 })
 

@@ -60,7 +60,7 @@ require("lazy").setup({
 	"hrsh7th/nvim-cmp",
 
 	-- luasnip
-	"L3MON4D3/LuaSnip",
+	{ "L3MON4D3/LuaSnip", run = "make install_jsregexp" },
 	"saadparwaiz1/cmp_luasnip",
 
 	-- colorscheme with settings
@@ -69,6 +69,9 @@ require("lazy").setup({
 	-- Markdown
 	"MeanderingProgrammer/render-markdown.nvim",
 	"echasnovski/mini.nvim",
+
+	-- web
+	"ray-x/web-tools.nvim",
 })
 --plugins-config
 require("Pconfig.bufferline")
@@ -80,4 +83,4 @@ require("Pconfig.nvim-cmp")
 require("Pconfig.autopairs")
 require("Pconfig.gitsigns")
 require("Pconfig.render-markdown")
-
+require("Pconfig.web-tools")
