@@ -24,6 +24,7 @@ require("lazy").setup({
 
 	"nvim-treesitter/nvim-treesitter",
 	"nvim-treesitter/nvim-treesitter-context",
+	"numToStr/Comment.nvim",
 
 	"nvim-telescope/telescope.nvim",
 	"nvim-lua/plenary.nvim",
@@ -65,7 +66,7 @@ require("lazy").setup({
 		-- follow latest release.
 		version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 		-- install jsregexp (optional!).
-		build = "make install_jsregexp"
+		build = "make install_jsregexp",
 	},
 	"saadparwaiz1/cmp_luasnip",
 
@@ -90,3 +91,4 @@ require("Pconfig.autopairs")
 require("Pconfig.gitsigns")
 require("Pconfig.render-markdown")
 require("Pconfig.web-tools")
+require("Pconfig.comment")
