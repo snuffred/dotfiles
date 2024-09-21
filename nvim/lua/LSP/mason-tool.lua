@@ -8,6 +8,7 @@ require("mason-tool-installer").setup({
 		"typst-lsp",
 		"clangd",
 		"pyright",
+		"jsonls",
 
 		-- DAP
 		"cpptools",
