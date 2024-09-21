@@ -67,14 +67,7 @@ require("lazy").setup({
 	{ "catppuccin/nvim", name = "catppuccin" },
 
 	-- Markdown
-	"echasnovski/mini.nvim",
-	"MeanderingProgrammer/render-markdown.nvim",
-
-	-- Media
-	"edluffy/hologram.nvim",
-	"3rd/image.nvim",
 })
-
 --plugins-config
 require("Pconfig.bufferline")
 require("Pconfig.lualine")
@@ -84,5 +77,3 @@ require("Pconfig.treesitter")
 require("Pconfig.nvim-cmp")
 require("Pconfig.autopairs")
 require("Pconfig.gitsigns")
-require("Pconfig.rendermarkdown")
-require("Pconfig.hologram")
