@@ -67,6 +67,8 @@ require("lazy").setup({
 	{ "catppuccin/nvim", name = "catppuccin" },
 
 	-- Markdown
+	"MeanderingProgrammer/render-markdown.nvim",
+	"echasnovski/mini.nvim",
 })
 --plugins-config
 require("Pconfig.bufferline")
@@ -77,3 +79,5 @@ require("Pconfig.treesitter")
 require("Pconfig.nvim-cmp")
 require("Pconfig.autopairs")
 require("Pconfig.gitsigns")
+require("Pconfig.render-markdown")
+
