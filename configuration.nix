@@ -17,9 +17,6 @@
   wsl.enable = true;
   wsl.defaultUser = "snuffred";
 
-
-  nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs;
     [
       git
@@ -29,12 +26,23 @@
       nixpkgs-fmt
       curl
       lazygit
+      gcc
+      llvm
+      zig
+      tree-sitter
+      nodejs_22
+      python3
+      lua
+      unzip
+      openssh
     ];
 
   programs.nix-ld = {
     enable = true;
     package = pkgs.nix-ld-rs;
   };
+
+
 
   users.users.snuffred = {
     isNormalUser = true;
