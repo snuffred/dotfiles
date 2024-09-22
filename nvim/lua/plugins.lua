@@ -76,9 +76,6 @@ require("lazy").setup({
 	-- Markdown
 	"MeanderingProgrammer/render-markdown.nvim",
 	"echasnovski/mini.nvim",
-
-	-- web
-	"ray-x/web-tools.nvim",
 })
 --plugins-config
 require("Pconfig.bufferline")

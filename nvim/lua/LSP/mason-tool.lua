@@ -24,7 +24,6 @@ require("mason-tool-installer").setup({
 		"latexindent",
 		"markdownlint", -- also included in linter
 		"beautysh",
-		"prettier",
 	},
 
 	auto_update = false,
