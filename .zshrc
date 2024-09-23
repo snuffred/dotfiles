@@ -16,6 +16,9 @@ export PATH="$PATH:/Users/snuffred/.local/bin"
 # Mysql@8.4
 export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
 
+# thefuck
+eval $(thefuck --alias)
+
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 
