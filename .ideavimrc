@@ -1,0 +1,7 @@
+set nu
+set relativenumber
+set showmode
+set showcmd
+
+inoremap jk <Esc>
+
