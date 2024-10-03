@@ -18,6 +18,7 @@ require("lazy").setup({
 
 	"nvim-lualine/lualine.nvim",
 	"akinsho/bufferline.nvim",
+	"lukas-reineke/indent-blankline.nvim",
 
 	"nvim-tree/nvim-web-devicons",
 	"moll/vim-bbye",
@@ -88,3 +89,4 @@ require("Pconfig.autopairs")
 require("Pconfig.gitsigns")
 require("Pconfig.render-markdown")
 require("Pconfig.comment")
+require("Pconfig.indentline")
