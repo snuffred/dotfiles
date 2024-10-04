@@ -1,5 +1,22 @@
 --bufferline
+local mocha = require("catppuccin.palettes").get_palette "mocha"
+local latte = require("catppuccin.palettes").get_palette "latte"
 require("bufferline").setup({
+	highlights = require("catppuccin.groups.integrations.bufferline").get {
+		styles = { "italic", "bold" },
+		custom = {
+		-- 	-- all = {
+		-- 	-- 	fill = { bg = "#000000" },
+		-- 	-- },
+			mocha = {
+				background = { fg = mocha.text },
+			},
+			latte = {
+				background = { fg = latte.txt },
+			},
+		},
+	},
+
 	options = {
 		themable = true,
 		numbers = "ordinal",

@@ -1,5 +1,4 @@
 require("nvim-tree").setup({
-	-- 不显示 git 状态图标
 	git = {
 		enable = true,
 	},
@@ -37,3 +36,6 @@ require("nvim-tree").setup({
 		cmd = "open", -- mac 直接设置为 open
 	},
 })
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

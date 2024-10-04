@@ -13,6 +13,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	-- colorscheme with settings
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
 	"folke/neoconf.nvim",
 	"folke/neodev.nvim",
 
@@ -70,9 +73,6 @@ require("lazy").setup({
 		build = "make install_jsregexp",
 	},
 	"saadparwaiz1/cmp_luasnip",
-
-	-- colorscheme with settings
-	{ "catppuccin/nvim", name = "catppuccin" },
 
 	-- Markdown
 	"MeanderingProgrammer/render-markdown.nvim",

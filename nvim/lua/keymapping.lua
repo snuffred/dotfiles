@@ -36,7 +36,7 @@ map("n", "<C-d>", "4j", opt)
 map("n", "<C-u>", "4k", opt)
 
 --plugins-keymappings
-local PluginKeys = {}
+--local PluginKeys = {}
 
 --nvim-tree
 map("n", "<C-m>", ":NvimTreeToggle<CR>", opt)
