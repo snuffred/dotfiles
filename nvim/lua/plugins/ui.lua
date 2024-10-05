@@ -29,15 +29,19 @@ return {
     { "nvchad/menu",  lazy = true },
 
 
-    {
-        "f-person/auto-dark-mode.nvim",
-        lazy = false,
-        config = function()
-            require("auto-dark-mode").setup({
-                update_interval = 1000,
-            })
-        end
-    },
+    -- {
+    --     "f-person/auto-dark-mode.nvim",
+    --     lazy = false,
+    --     config = function()
+    --         require("auto-dark-mode").setup({
+    --             update_interval = 1000,
+    --             set_dark_mode = function()
+    --             end,
+    --             set_light_mode = function()
+    --             end,
+    --         })
+    --     end
+    -- },
 
     {
         "nvim-lualine/lualine.nvim",
