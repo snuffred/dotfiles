@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	-- colorscheme with settings
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "catppuccin/nvim", name = "catppuccin"},
 
 	"folke/neoconf.nvim",
 	"folke/neodev.nvim",
@@ -27,7 +27,6 @@ require("lazy").setup({
 	"moll/vim-bbye",
 
 	"nvim-treesitter/nvim-treesitter",
-	"nvim-treesitter/nvim-treesitter-context",
 	"numToStr/Comment.nvim",
 
 	"nvim-telescope/telescope.nvim",

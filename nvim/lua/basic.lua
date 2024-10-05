@@ -1,22 +1,17 @@
-vim.g.encoding = "UTF-8"
-vim.o.fileencoding = "utf-8"
+local opt = vim.opt
 
-vim.o.number = true
-vim.wo.relativenumber = true
+opt.number = true
+opt.relativenumber = true
+opt.hlsearch = true
 
-vim.wo.cursorline = true
-vim.o.hlsearch = true
+opt.tabstop = 2
+opt.shiftwidth = 2
 
-vim.o.mouse = "a"
+opt.cursorline = true
+opt.termguicolors = true
+opt.signcolumn = "yes"
 
-vim.o.timeoutlen = 500
-vim.o.splitbelow = true
-vim.o.splitright = true
-
-vim.o.termguicolors = true
-
-vim.o.wildmenu = true
-
-vim.opt.signcolumn = "yes"
+opt.splitbelow = true
+opt.splitbelow = true
 
 vim.cmd("filetype plugin indent on")

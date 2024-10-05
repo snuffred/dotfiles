@@ -1,9 +1,5 @@
+require("lazyconfig")
+
+require("chadrc")
 require("basic")
-
-require("keymapping")
-
-require("plugins")
-
-require("colorscheme")
-
-require("configlsp")
+require("keymaps")
