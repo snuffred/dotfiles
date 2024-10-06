@@ -15,6 +15,7 @@ return {
 
             -- global lsp mappings
             map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic loclist" })
+
             -- tabufline
             map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
 
@@ -80,14 +81,14 @@ return {
             require('auto-dark-mode').setup({
                 update_interval = 1000,
                 set_light_mode = function()
-                    if current ~= toggle[2] then
+                    if current ~= toggle[1] then
                         require("nvconfig").base46.theme = 'one_light'
                         require("base46").load_all_highlights()
                     end
                 end,
                 set_dark_mode = function()
                     if current ~= toggle[2] then
-                        require("nvconfig").base46.theme = 'onedark'
+                        require("nvconfig").base46.theme = 'catppuccin'
                         require("base46").load_all_highlights()
                     end
                 end,
