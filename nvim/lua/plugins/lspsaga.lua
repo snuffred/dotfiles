@@ -5,9 +5,6 @@ return {
             code_action = {
                 enable = false,
             },
-            lightbulb = {
-                enable = false,
-            }
         })
 
         -- keymaps

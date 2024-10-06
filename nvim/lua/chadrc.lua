@@ -8,12 +8,13 @@ M.base46 = {
 
 M.ui = {
   statusline = {
-    theme = 'minimal' ,
-    separator_style  = "block",
+    theme           = 'minimal',
+    separator_style = "block",
   },
 
   cmp = {
-    icons = true,
+    icons_left = true,
+    style = "default",
   },
 
   telescope = {

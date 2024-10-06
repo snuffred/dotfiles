@@ -13,6 +13,8 @@ return {
             -- NVCheatsheet
             map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
 
+            -- global lsp mappings
+            map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic loclist" })
             -- tabufline
             map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
 
