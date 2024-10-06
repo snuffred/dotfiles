@@ -81,14 +81,12 @@ return {
             require('auto-dark-mode').setup({
                 update_interval = 1000,
                 set_light_mode = function()
-                    if current ~= toggle[1] then
-                        require("nvconfig").base46.theme = 'one_light'
-                        require("base46").load_all_highlights()
-                    end
+                    require("nvconfig").base46.theme = toggle[1]
+                    require("base46").load_all_highlights()
                 end,
                 set_dark_mode = function()
                     if current ~= toggle[2] then
-                        require("nvconfig").base46.theme = 'catppuccin'
+                        require("nvconfig").base46.theme = toggle[2]
                         require("base46").load_all_highlights()
                     end
                 end,
