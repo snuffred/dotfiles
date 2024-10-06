@@ -1,13 +1,16 @@
 local M = {}
 
 M.base46 = {
-  theme = "onedark",
+  theme = "one_light",
   transparency = false,
-  -- theme_toggle = { "one_light", "onedark" },
+  theme_toggle = { "one_light", "onedark" },
 }
 
 M.ui = {
-  statusline = { theme = 'default' },
+  statusline = {
+    theme = 'minimal' ,
+    separator_style  = "block",
+  },
 
   cmp = {
     icons = true,
