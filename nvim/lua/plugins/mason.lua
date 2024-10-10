@@ -24,7 +24,7 @@ return {
 				"lua_ls",
 				"rust_analyzer",
 				"ltex",
-				"typst-lsp",
+        "tinymist",
 				"clangd",
 				"pyright",
 				"jsonls",

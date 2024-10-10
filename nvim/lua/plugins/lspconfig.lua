@@ -71,8 +71,11 @@ return {
 			capabilities = capabilities,
 		})
 
-		require("lspconfig").typst_lsp.setup({
-      capabilities = capabilities,
+    require'lspconfig'.tinymist.setup({
+      settings = {
+            exportPdf = "onType",
+            outputPath = "$root/target/$dir/$name",
+          }
     })
 	end,
 }
