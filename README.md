@@ -1,0 +1,2 @@
+# Dotfils for snuffred
+

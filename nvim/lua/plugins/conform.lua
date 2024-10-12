@@ -9,9 +9,10 @@ return {
 				lua = { "stylua" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
-				python = { "isort", "black" },
+				python = { "black" },
 				tex = { "latexindent" },
-				markdown = { "markdown-toc" },
+				markdown = { "markdownlint" },
+        typst = {"typstyle"}
 			},
 		})
 
