@@ -1,5 +1,7 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	event = { "BufReadPost", "BufNewFile" },
+	cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter-context",
 		-- "nvim-treesitter/nvim-treesitter-textobjects",

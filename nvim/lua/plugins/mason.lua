@@ -1,7 +1,7 @@
 return {
 	"williamboman/mason.nvim",
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		"jay-babu/mason-nvim-dap.nvim",
 	},
@@ -21,13 +21,11 @@ return {
 			ensure_installed = {
 				-- LSP
 
-				"lua_ls",
-				"rust_analyzer",
-				"ltex",
-        "tinymist",
+				"lua-language-server",
+				"rust-analyzer",
+				"ltex-ls",
+				"tinymist",
 				"clangd",
-				"pyright",
-				"jsonls",
 
 				-- DAP
 				"cpptools",

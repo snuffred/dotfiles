@@ -1,5 +1,6 @@
 return {
 	"nvim-tree/nvim-tree.lua",
+  keys = "<C-n>",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
 		local nvimtree = require("nvim-tree")
@@ -48,7 +49,7 @@ return {
 
 		local map = vim.keymap.set
 
-		map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
-		map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>")
+		map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
+		map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })
 	end,
 }
