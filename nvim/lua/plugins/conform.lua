@@ -12,7 +12,8 @@ return {
 				python = { "black" },
 				tex = { "latexindent" },
 				markdown = { "markdownlint" },
-        typst = {"typstyle"}
+				typst = { "typstyle" },
+        bash = {"beautysh"},
 			},
 		})
 

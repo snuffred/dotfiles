@@ -17,40 +17,5 @@ return {
 			},
 		})
 
-		require("mason-tool-installer").setup({
-			ensure_installed = {
-				-- LSP
-
-				"lua-language-server",
-				"rust-analyzer",
-				"ltex-ls",
-				"tinymist",
-				"clangd",
-
-				-- DAP
-				"cpptools",
-
-				-- Linter
-				"ast-grep",
-				"cpplint",
-				"cspell",
-
-				-- formatter
-				"stylua",
-				"clang-format",
-				"latexindent",
-				"markdownlint", -- also included in linter
-				"beautysh",
-			},
-
-			auto_update = false,
-
-			run_on_start = true,
-
-			integrations = {
-				["mason-lspconfig"] = true,
-				["mason-nvim-dap"] = true,
-			},
-		})
 	end,
 }
