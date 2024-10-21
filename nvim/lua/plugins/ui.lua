@@ -17,7 +17,7 @@ return {
 			map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic loclist" })
 
 			-- tabufline
-			map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
+			map("n", "<leader>n", "<cmd>enew<CR>", { desc = "buffer new" })
 
 			map("n", "<tab>", function()
 				require("nvchad.tabufline").next()

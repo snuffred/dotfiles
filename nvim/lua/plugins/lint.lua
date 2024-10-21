@@ -13,7 +13,7 @@ return {
 			callback = function()
 				-- try_lint without arguments runs the linters defined in `linters_by_ft`
 				-- for the current filetype
-        requrire("lint").try_lint()
+        require("lint").try_lint()
 
 
 				-- You can call `try_lint` with a linter name or a list of names to always
