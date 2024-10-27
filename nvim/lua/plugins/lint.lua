@@ -7,6 +7,7 @@ return {
 			lua = { "luacheck" },
 			c = { "cppcheck" },
 			cpp = { "cppcheck" },
+      md = {"cspell"}
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
