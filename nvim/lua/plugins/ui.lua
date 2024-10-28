@@ -74,24 +74,24 @@ return {
 	{
 		"f-person/auto-dark-mode.nvim",
 		lazy = false,
-		config = function()
-			local toggle = require("chadrc").base46.theme_toggle
-			local current = require("chadrc").base46.theme
-			require("auto-dark-mode").setup({
-				update_interval = 1000,
-				set_light_mode = function()
-					require("nvconfig").base46.theme = toggle[1]
-					require("base46").load_all_highlights()
-				end,
-				set_dark_mode = function()
-					if current ~= toggle[2] then
-						require("nvconfig").base46.theme = toggle[2]
-						require("base46").load_all_highlights()
-					end
-				end,
-			})
-			require("auto-dark-mode").init()
-		end,
+		-- config = function()
+		-- 	local toggle = require("chadrc").base46.theme_toggle
+		-- 	local current = require("chadrc").base46.theme
+		-- 	require("auto-dark-mode").setup({
+		-- 		update_interval = 1000,
+		-- 		set_light_mode = function()
+		-- 			require("nvconfig").base46.theme = toggle[1]
+		-- 			require("base46").load_all_highlights()
+		-- 		end,
+		-- 		set_dark_mode = function()
+		-- 			if current ~= toggle[2] then
+		-- 				require("nvconfig").base46.theme = toggle[2]
+		-- 				require("base46").load_all_highlights()
+		-- 			end
+		-- 		end,
+		-- 	})
+		-- 	require("auto-dark-mode").init()
+		-- end,
 	},
 
 	{
