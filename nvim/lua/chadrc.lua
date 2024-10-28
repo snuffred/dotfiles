@@ -1,9 +1,9 @@
 local M = {}
 
 M.base46 = {
-  theme = "github_light",
+  theme = "catppuccin",
   transparency = false,
-  theme_toggle = { "github_light", "catppuccin" },
+  -- theme_toggle = { "github_light", "catppuccin" },
 }
 
 M.ui = {
