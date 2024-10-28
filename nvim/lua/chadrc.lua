@@ -3,7 +3,6 @@ local M = {}
 M.base46 = {
   theme = "catppuccin",
   transparency = true,
-  -- theme_toggle = { "github_light", "catppuccin" },
 }
 
 M.ui = {
