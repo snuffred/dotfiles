@@ -73,7 +73,7 @@ return {
 
 	{
 		"f-person/auto-dark-mode.nvim",
-		lazy = false,
+		lazy = true,
 		-- config = function()
 		-- 	local toggle = require("chadrc").base46.theme_toggle
 		-- 	local current = require("chadrc").base46.theme
