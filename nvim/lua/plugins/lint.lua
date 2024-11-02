@@ -3,7 +3,7 @@ return {
 
 	config = function()
 		require("lint").linters_by_ft = {
-			markdown = { "markdownlint" },
+			markdown = { "markdownlint" , "cspell"},
 			lua = { "luacheck" },
 			c = { "cppcheck" },
 			cpp = { "cppcheck" },
@@ -18,7 +18,7 @@ return {
 
 				-- You can call `try_lint` with a linter name or a list of names to always
 				-- run specific linters, independent of the `linters_by_ft` configuration
-				require("lint").try_lint("cspell")
+				require("lint").try_lint()
 			end,
 		})
 	end,

@@ -6,4 +6,5 @@ window-colorspace = display-p3
 window-theme = system
 background-opacity = 0.9
 font-family = Firacode Nerd Font
-mouse-hide-while-typing = true
+mouse-hide-while-typing = false
+theme = catppuccin-mocha
