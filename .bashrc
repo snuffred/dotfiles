@@ -1,3 +1,4 @@
-eval "$(starship init bash)"
-
 export PATH="$HOME/.cargo/bin:$PATH"
+
+
+eval "$(starship init bash)"
