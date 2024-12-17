@@ -43,15 +43,15 @@ return {
 			end, { desc = "terminal new vertical window" })
 
 			-- toggleable
-			map({ "n", "t" }, "<A-v>", function()
+			map({ "n", "t" }, "<leader>tv", function()
 				require("nvchad.term").toggle({ pos = "vsp", id = "vtoggleTerm" })
 			end, { desc = "terminal toggleable vertical term" })
 
-			map({ "n", "t" }, "<A-h>", function()
+			map({ "n", "t" }, "<leader>th", function()
 				require("nvchad.term").toggle({ pos = "sp", id = "htoggleTerm" })
 			end, { desc = "terminal toggleable horizontal term" })
 
-			map({ "n", "t" }, "<A-i>", function()
+			map({ "n", "t" }, "<leader>tf", function()
 				require("nvchad.term").toggle({ pos = "float", id = "floatTerm" })
 			end, { desc = "terminal toggle floating term" })
 		end,
