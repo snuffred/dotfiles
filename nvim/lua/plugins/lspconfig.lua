@@ -68,6 +68,7 @@ return {
 
 		require("lspconfig").clangd.setup({
 			capabilities = capabilities,
+      filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
 		})
 
 		require("lspconfig").tinymist.setup({
