@@ -1,6 +1,6 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-  keys = "<C-n>",
+	keys = "<C-n>",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
 		local nvimtree = require("nvim-tree")

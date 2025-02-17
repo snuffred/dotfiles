@@ -13,7 +13,7 @@ return {
 				tex = { "latexindent" },
 				markdown = { "markdownlint" },
 				typst = { "typstyle" },
-        bash = {"beautysh"},
+				bash = { "beautysh" },
 			},
 		})
 
