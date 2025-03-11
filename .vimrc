@@ -1,4 +1,3 @@
-syntax on
 syntax enable
 set backspace=2
 set nocompatible
