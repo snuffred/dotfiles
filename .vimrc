@@ -13,9 +13,16 @@ set ruler
 set showmatch
 set hlsearch
 set incsearch
+set termguicolors
 
 set updatetime=300
 filetype on
+
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 " ---keymap 
 inoremap jk <Esc>
@@ -32,3 +39,12 @@ noremap <silent> <C-S-Up> :horizontal resize -5<CR>
 noremap <silent> <C-S-Down> :horizontal resize +5<CR>
 " noremap <silent> <C-Left> :vertical resize +1<CR>
 " noremap <silent> <C-Right> :vertical resize -1<CR>
+
+call plug#begin()
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
+colorscheme catppuccin_mocha
+let g:airline_theme = 'catppuccin_mocha'
