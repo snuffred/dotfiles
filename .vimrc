@@ -17,11 +17,10 @@ set incsearch
 set termguicolors
 
 set updatetime=300
-filetype on
+filetype plugin indent on
 
 " setting for netrw
 set nocp
-filetype plugin on
 
 " If don't exist vim-plugin then install it.
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -58,6 +57,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
 Plug 'preservim/tagbar'
+Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " Colorscheme 
@@ -70,3 +75,40 @@ let g:airline_powerline_fonts = 1
 
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
+
+" Tagbar
+nmap <leader>t :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+
+" Ale
+" Complete
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+" ALe lsp
+let g:ale_disable_lsp = 0
+" Ale lint
+let g:ale_linters = { 'nix': ['nixfmt'], 'c' : ['clangd'], 'c++': ['clangd'] }
+" Ale keymaps
+noremap gd :ALEGoToDefinition<CR>
+noremap gr :ALEFindReferences<CR>
+noremap <leader>fx :ALEFix<CR>
+noremap <leader>cr :ALEFileRename<CR>
+noremap <leader>ca :ALECodeAction<CR>
+nnoremap <leader>ss :execute 'ALESymbolSearch ' . input('Symbol: ')<CR>
+
+" fzf
+" Mapping selecting mappings
+nmap <leader>ch <plug>(fzf-maps-n)
+xmap <leader>ch <plug>(fzf-maps-x)
+omap <leader>ch <plug>(fzf-maps-o)
+
+" Insert mode completion
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
+map <leader>ff :Files<CR>
+map <leader>fb :Buffers<CR>
+
+" Neoformat
+noremap <leader>fm :Neoformat<CR>
