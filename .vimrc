@@ -19,9 +19,6 @@ set termguicolors
 set updatetime=300
 filetype plugin indent on
 
-" setting for netrw
-set nocp
-
 " If don't exist vim-plugin then install it.
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
