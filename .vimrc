@@ -30,22 +30,22 @@ endif
 inoremap jk <Esc>
 let g:mapleader = " "
 
-noremap <leader>nh :nohl<CR>
+nnoremap <leader>nh :nohl<CR>
 
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
-noremap sv <C-w>v
-noremap sh <C-w>s
-noremap sc <C-w>c
-noremap so <C-w>o
+nnoremap sv <C-w>v
+nnoremap sh <C-w>s
+nnoremap sc <C-w>c
+nnoremap so <C-w>o
 
-noremap <silent> <C-Left> :vertical resize +2<CR>
-noremap <silent> <C-Right> :vertical resize -2<CR>
-noremap <silent> <C-Up> :horizontal resize -2<CR>
-noremap <silent> <C-Down> :horizontal resize +2<CR>
+nnoremap <silent> <C-Left> :vertical resize +2<CR>
+nnoremap <silent> <C-Right> :vertical resize -2<CR>
+nnoremap <silent> <C-Up> :horizontal resize -2<CR>
+nnoremap <silent> <C-Down> :horizontal resize +2<CR>
 
 " Plug list
 call plug#begin()
@@ -122,5 +122,3 @@ noremap <leader>/ :Rg<CR>
 
 " Neoformat
 noremap <leader>fm :Neoformat<CR>
-
-
