@@ -68,13 +68,11 @@ call plug#end()
 function DarkMode()
   colorscheme catppuccin_mocha
     let g:airline_theme = 'catppuccin_mocha'
-
 endfunction
 
 function LightMode()
   colorscheme catppuccin_latte
     let g:airline_theme = 'catppuccin_latte'
-
 endfunction
 
 
@@ -84,6 +82,9 @@ let g:airline_powerline_fonts = 1
 
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
+" airlien custom
+let g:airline_section_z = ''
+let g:airline_skip_empty_sections = 1
 
 " Tagbar
 nmap <leader>t :TagbarToggle<CR>
@@ -122,3 +123,8 @@ noremap <leader>/ :Rg<CR>
 
 " Neoformat
 noremap <leader>fm :Neoformat<CR>
+" Auto format when save file
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
