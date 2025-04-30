@@ -14,7 +14,7 @@ return {
 				markdown = { "markdownlint" },
 				typst = { "typstyle" },
 				bash = { "beautysh" },
-        nix = {"nixfmt"}
+				nix = { "nixfmt" },
 			},
 		})
 
