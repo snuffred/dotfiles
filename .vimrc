@@ -42,8 +42,8 @@ nnoremap sh <C-w>s
 nnoremap sc <C-w>c
 nnoremap so <C-w>o
 
-nnoremap <silent> <C-Left> :vertical resize +2<CR>
-nnoremap <silent> <C-Right> :vertical resize -2<CR>
+nnoremap <silent> <C-Left> :vertical resize -2<CR>
+nnoremap <silent> <C-Right> :vertical resize +2<CR>
 nnoremap <silent> <C-Up> :horizontal resize -2<CR>
 nnoremap <silent> <C-Down> :horizontal resize +2<CR>
 
@@ -67,12 +67,12 @@ call plug#end()
 " Auto light and dark themes and arline
 function DarkMode()
   colorscheme catppuccin_mocha
-    let g:airline_theme = 'catppuccin_mocha'
+  let g:airline_theme = 'catppuccin_mocha'
 endfunction
 
 function LightMode()
   colorscheme catppuccin_latte
-    let g:airline_theme = 'catppuccin_latte'
+  let g:airline_theme = 'catppuccin_latte'
 endfunction
 
 
