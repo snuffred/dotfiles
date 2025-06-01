@@ -15,9 +15,9 @@ return {
 				snacks = {
 					enabled = true,
 					indent_scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
-				}
-			}
+				},
+			},
 		})
-		vim.cmd.colorscheme "catppuccin"
-	end
+		vim.cmd.colorscheme("catppuccin")
+	end,
 }

@@ -6,7 +6,7 @@ opt.hlsearch = true
 
 opt.tabstop = 2
 opt.shiftwidth = 2
-opt.expandtab = true  -- expand tab to spaces
+opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 opt.cursorline = true

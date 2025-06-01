@@ -18,11 +18,11 @@ return {
 			"<cmd>Trouble symbols toggle focus=false<cr>",
 			desc = "Symbols (Trouble)",
 		},
-    {
-      "<leader>cS",
-      "<cmd>Trouble  lsp_document_symbols toggle focus toggle focus=false<cr>",
-      desc = "Lsp Symbols(Trouble)",
-    },
+		{
+			"<leader>cS",
+			"<cmd>Trouble  lsp_document_symbols toggle focus toggle focus=false<cr>",
+			desc = "Lsp Symbols(Trouble)",
+		},
 		{
 			"<leader>cl",
 			"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",

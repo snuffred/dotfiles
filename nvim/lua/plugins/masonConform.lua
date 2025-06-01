@@ -1,5 +1,5 @@
 return {
-    require("mason-conform").setup({
-        ensure_installed = {},
-    })
+	require("mason-conform").setup({
+		ensure_installed = {},
+	}),
 }
