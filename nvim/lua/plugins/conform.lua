@@ -15,6 +15,9 @@ return {
 				typst = { "typstyle" },
 				bash = { "beautysh" },
 				nix = { "nixfmt" },
+				html = { "prettier" },
+				css = { "prettier" },
+				javascript = { "prettier" },
 			},
 		})
 
