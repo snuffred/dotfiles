@@ -151,6 +151,5 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-3 = 'Built-in'
-2 = '27M2N5810'
-1 = 'Redmi'
+1 = 'DELL'
+2 = 'Built-in'

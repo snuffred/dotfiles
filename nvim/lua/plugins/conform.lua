@@ -17,6 +17,7 @@ return {
 				html = { "prettier" },
 				css = { "prettier" },
 				javascript = { "prettier" },
+				julia = { "runic" },
 			},
 		})
 
