@@ -20,3 +20,5 @@ elif [[ $OS == "Linux" ]]; then
 fi
 
 
+
+export PATH="$HOME/.elan/bin:$PATH"
