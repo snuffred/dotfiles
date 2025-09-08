@@ -3,4 +3,6 @@ return {
 	dependencies = {
 		"folke/neodev.nvim",
 	},
+
+  vim.lsp.enable("julials")
 }
