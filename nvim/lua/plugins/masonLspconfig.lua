@@ -1,7 +1,7 @@
 return {
 	"mason-org/mason-lspconfig.nvim",
 	opts = {
-		ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "taplo", "angularls", "julials"},
+		ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "taplo", "angularls"},
 	},
 	dependencies = {
 		{ "mason-org/mason.nvim", opts = {} },
