@@ -2,7 +2,6 @@
 case "$OSTYPE" in
   darwin*)   OS="macOS" ;;
   linux*)    OS="Linux" ;;
-  *)         OS="Other" ;;
 esac
 
 if [[ $OS == "macOS" ]]; then
