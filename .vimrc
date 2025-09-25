@@ -60,24 +60,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-commentary'
-Plug 'nburns/vim-auto-light-dark'
 call plug#end()
 
-" Colorscheme 
-" Auto light and dark themes and arline
-function DarkMode()
-  colorscheme catppuccin_mocha
-  let g:airline_theme = 'catppuccin_mocha'
-endfunction
-
-function LightMode()
-  colorscheme catppuccin_latte
-  let g:airline_theme = 'catppuccin_latte'
-endfunction
-
+"colorscheme
+colorscheme catppuccin_latte
 
 " Airline
-" let g:airline_theme = 'catppuccin_latte'
+let g:airline_theme = 'catppuccin_latte'
 let g:airline_powerline_fonts = 1
 
 " Set this. Airline will handle the rest.
