@@ -7,6 +7,7 @@ return {
 		require("catppuccin").setup({
 			background = { -- :h background
 				light = "latte",
+				dark = "latte"
 			},
 			intergrations = {
 				blink_cmp = true,
