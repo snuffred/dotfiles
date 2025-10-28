@@ -22,6 +22,7 @@ brew "rust"
 brew "tex-fmt"
 brew "typstyle"
 brew "yazi"
+brew "gem"
 if OS.mac?
 tap "nikitabobko/tap"
   brew "codex"
