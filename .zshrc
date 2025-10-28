@@ -33,3 +33,6 @@ zinit light spaceship-prompt/spaceship-prompt
 # alias
 alias ls='ls --color'
 alias s="kitten ssh"
+
+# rbenv
+eval "$(rbenv init - zsh)"

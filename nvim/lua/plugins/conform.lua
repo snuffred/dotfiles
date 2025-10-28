@@ -18,6 +18,7 @@ return {
 				css = { "prettier" },
 				javascript = { "prettier" },
 				julia = { "runic" },
+        ruby = {"rubocop"}
 			},
 
     formatters = {
