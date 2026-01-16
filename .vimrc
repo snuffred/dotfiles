@@ -60,6 +60,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-commentary'
+Plug 'lambdalisue/vim-fern'
+Plug 'lambdalisue/vim-fern-renderer-nerdfont'
+Plug 'yuki-yano/fern-preview.vim'
+Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 "colorscheme
@@ -116,4 +120,30 @@ noremap <leader>fm :Neoformat<CR>
 augroup fmt
   autocmd!
   autocmd BufWritePre * undojoin | Neoformat
+augroup END
+
+" Fern
+ nnoremap <silent> <Leader>ee :<C-u>Fern <C-r>=<SID>smart_path()<CR><CR>
+
+" Return a parent directory of the current buffer when the buffer is a file.
+" Otherwise it returns a current working directory.
+function! s:smart_path() abort
+  if !empty(&buftype) || bufname('%') =~# '^[^:]\+://'
+    return fnamemodify('.', ':p')
+  endif
+  return fnamemodify(expand('%'), ':p:h')
+endfunction
+" Fern nerd font
+let g:fern#renderer = "nerdfont"
+" Fern preview
+function! s:fern_settings() abort
+  nmap <silent> <buffer> p     <Plug>(fern-action-preview:toggle)
+  nmap <silent> <buffer> <C-p> <Plug>(fern-action-preview:auto:toggle)
+  nmap <silent> <buffer> <C-d> <Plug>(fern-action-preview:scroll:down:half)
+  nmap <silent> <buffer> <C-u> <Plug>(fern-action-preview:scroll:up:half)
+endfunction
+
+augroup fern-settings
+  autocmd!
+  autocmd FileType fern call s:fern_settings()
 augroup END
