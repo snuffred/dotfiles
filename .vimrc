@@ -112,7 +112,7 @@ set omnifunc=ale#completion#OmniFunc
 " ALe lsp
 let g:ale_disable_lsp = 0
 " Ale lint
-let g:ale_linters = { 'nix': ['nixfmt'], 'c' : ['clangd'], 'c++': ['clangd'] }
+let g:ale_linters = { 'c' : ['clangd'], 'c++': ['clangd'] }
 " Ale keymaps
 noremap gd :ALEGoToDefinition<CR>
 noremap gr :ALEFindReferences<CR>
