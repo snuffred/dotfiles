@@ -36,3 +36,6 @@ alias s="kitten ssh"
 
 # rbenv
 eval "$(rbenv init - zsh)"
+
+# mpiexecjl
+export PATH="$HOME/.julia/bin:$PATH"

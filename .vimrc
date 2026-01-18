@@ -82,6 +82,28 @@ let g:airline_skip_empty_sections = 1
 " Tagbar
 nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+" Julia
+" Tagbar Julia configuration
+let g:tagbar_type_julia = {
+    \ 'ctagsbin' : 'ctags',
+    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 't:types',
+        \ 'f:functions',
+        \ 'M:macros',
+        \ 'c:constants'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 'm' : 'module',
+        \ 't' : 'struct'
+    \ },
+    \ 'scope2kind' : {
+        \ 'module' : 'm',
+        \ 'struct' : 't'
+    \ }
+\ }
 
 " Ale
 " Complete
