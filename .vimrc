@@ -52,9 +52,10 @@ call plug#begin()
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dense-analysis/ale'
 Plug 'preservim/tagbar'
 Plug 'sheerun/vim-polyglot'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -63,7 +64,6 @@ Plug 'tpope/vim-commentary'
 Plug 'lambdalisue/vim-fern'
 Plug 'lambdalisue/vim-fern-renderer-nerdfont'
 Plug 'yuki-yano/fern-preview.vim'
-Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 "colorscheme
@@ -73,7 +73,7 @@ colorscheme catppuccin_latte
 let g:airline_theme = 'catppuccin_latte'
 let g:airline_powerline_fonts = 1
 
-" Set this. Airline will handle the rest.
+" Set this. Airline will handle the rest
 let g:airline#extensions#ale#enabled = 1
 " airlien custom
 let g:airline_section_z = ''
@@ -105,21 +105,36 @@ let g:tagbar_type_julia = {
     \ }
 \ }
 
-" Ale
-" Complete
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
-" ALe lsp
-let g:ale_disable_lsp = 0
-" Ale lint
-let g:ale_linters = { 'c' : ['clangd'], 'c++': ['clangd'] }
-" Ale keymaps
-noremap gd :ALEGoToDefinition<CR>
-noremap gr :ALEFindReferences<CR>
-noremap <leader>fx :ALEFix<CR>
-noremap <leader>cr :ALEFileRename<CR>
-noremap <leader>ca :ALECodeAction<CR>
-nnoremap <leader>ss :execute 'ALESymbolSearch ' . input('Symbol: ')<CR>
+
+" vim-lsp
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    setlocal signcolumn=yes
+    if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
+    nmap <buffer> gd <plug>(lsp-definition)
+    nmap <buffer> gs <plug>(lsp-document-symbol-search)
+    nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
+    nmap <buffer> gr <plug>(lsp-references)
+    nmap <buffer> gi <plug>(lsp-implementation)
+    nmap <buffer> gt <plug>(lsp-type-definition)
+    nmap <buffer> <leader>rn <plug>(lsp-rename)
+    nmap <buffer> [g <plug>(lsp-previous-diagnostic)
+    nmap <buffer> ]g <plug>(lsp-next-diagnostic)
+    nmap <buffer> K <plug>(lsp-hover)
+    nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
+    nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
+
+    let g:lsp_format_sync_timeout = 1000
+    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+    
+    " refer to doc to add more commands
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
 
 " fzf
 " Mapping selecting mappings
