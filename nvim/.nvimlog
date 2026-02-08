@@ -1,0 +1,12 @@
+WRN 2026-02-09T01:45:29.774 ?.75939    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/KWH1Hh/nvim.75939.0
+WRN 2026-02-09T01:45:54.238 ?.76014    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/9LOVaS/nvim.76014.0
+WRN 2026-02-09T01:46:03.241 ?.76483    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/jMX0Ek/nvim.76483.0
+WRN 2026-02-09T01:46:26.216 ?.76528    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/YXYWo4/nvim.76528.0
+WRN 2026-02-09T01:46:36.086 ?.76565    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/S1cCQH/nvim.76565.0
+WRN 2026-02-09T01:46:43.395 ?.76940    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/jGeEUt/nvim.76940.0
+WRN 2026-02-09T01:46:43.395 ?.76938    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/EDYwUS/nvim.76938.0
+WRN 2026-02-09T01:46:43.396 ?.76939    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/BuP9eg/nvim.76939.0
+WRN 2026-02-09T01:47:26.950 ?.77063    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/ZoJVii/nvim.77063.0
+WRN 2026-02-09T01:47:31.790 ?.77094    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/ylxgMA/nvim.77094.0
+WRN 2026-02-09T01:47:40.503 ?.77750    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/dCiMfU/nvim.77750.0
+WRN 2026-02-09T01:47:53.727 ?.77777    server_start:199: Failed to start server: operation not permitted: /var/folders/qm/p57l2fsn5hlc84v_hslc5xd00000gn/T/nvim.snuffred/iQmbmY/nvim.77777.0

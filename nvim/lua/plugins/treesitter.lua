@@ -7,7 +7,6 @@ return {
 		"nvim-treesitter/nvim-treesitter-context",
 		-- "nvim-treesitter/nvim-treesitter-textobjects",
 	},
-	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local configs = require("nvim-treesitter.configs")
 

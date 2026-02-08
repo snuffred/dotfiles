@@ -39,3 +39,6 @@ eval "$(rbenv init - zsh)"
 
 # mpiexecjl
 export PATH="$HOME/.julia/bin:$PATH"
+
+# ghcup
+export PATH="$HOME/.ghcup/bin:$PATH"

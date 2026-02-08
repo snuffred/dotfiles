@@ -9,7 +9,7 @@ return {
 				light = "latte",
 				dark = "latte"
 			},
-			intergrations = {
+			integrations = {
 				blink_cmp = true,
 				mason = true,
 				snacks = {
