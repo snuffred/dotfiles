@@ -20,7 +20,9 @@ return {
 	},
 
 	config = function()
-		require("tiny-code-action").setup({})
+		require("tiny-code-action").setup({
+			opts,
+		})
 
 		local map = vim.keymap.set
 
