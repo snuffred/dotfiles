@@ -1,7 +1,12 @@
 return {
 	"rshkarin/mason-nvim-lint",
 	config = function(_, opts)
+		opts = opts or {}
+
 		local mapping = require("mason-nvim-lint.mapping").nvimlint_to_package
+		-- Backfill missing mapping in some mason-nvim-lint versions.
+		mapping.hlint = mapping.hlint or "hlint"
+
 		opts.ensure_installed = vim.tbl_filter(function(linter_name)
 			return mapping[linter_name] ~= nil
 		end, opts.ensure_installed or {})
