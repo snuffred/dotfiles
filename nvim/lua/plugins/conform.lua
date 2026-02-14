@@ -18,7 +18,8 @@ return {
 				css = { "prettier" },
 				javascript = { "prettier" },
 				julia = { "runic" },
-        ruby = {"rubyfmt"}
+				haskell = { "fourmolu", "ormolu", stop_after_first = true },
+				ruby = { "rubyfmt" },
 			},
 
     formatters = {

@@ -1,5 +1,9 @@
 return {
-	require("mason-conform").setup({
-		ensure_installed = {},
-	}),
+	"zapling/mason-conform.nvim",
+	opts = {
+	},
+	dependencies = {
+		"mason-org/mason.nvim",
+		"stevearc/conform.nvim",
+	},
 }

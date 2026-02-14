@@ -3,6 +3,8 @@ return {
 	dependencies = {
 		"folke/neodev.nvim",
 	},
-
-  vim.lsp.enable("julials")
+	config = function()
+		vim.lsp.enable("julials")
+		vim.lsp.enable("hls")
+	end,
 }
