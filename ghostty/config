@@ -2,11 +2,17 @@
 
 clipboard-read = allow
 clipboard-write = allow
+
 window-colorspace = display-p3
-window-theme = system
+
 font-family = Firacode Nerd Font
+font-size = 16
+
 mouse-hide-while-typing = false
-theme = catppuccin-mocha
+
+theme = Catppuccin Latte
 
 macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
+
+window-vsync = true
