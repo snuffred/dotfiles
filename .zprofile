@@ -16,3 +16,7 @@ elif [[ $OS == "Linux" ]]; then
 fi
 
 export PATH="$HOME/.elan/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d "$PYENV_ROOT/bin" ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"

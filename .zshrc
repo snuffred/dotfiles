@@ -32,7 +32,6 @@ zinit light spaceship-prompt/spaceship-prompt
 
 # alias
 alias ls='ls --color'
-alias s="kitten ssh"
 
 # rbenv
 eval "$(rbenv init - zsh)"
@@ -42,3 +41,6 @@ export PATH="$HOME/.julia/bin:$PATH"
 
 # ghcup
 export PATH="$HOME/.ghcup/bin:$PATH"
+
+# pyenv
+eval "$(pyenv init - zsh)"
