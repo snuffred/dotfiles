@@ -151,4 +151,4 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-2 = 'Built-in'
+3 = 'Built-in'
