@@ -17,6 +17,8 @@ set showmatch
 set hlsearch
 set incsearch
 set termguicolors
+set splitright
+set splitbelow
 
 set updatetime=300
 filetype plugin indent on
