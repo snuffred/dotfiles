@@ -8,7 +8,7 @@ opt.hlsearch = true
 
 opt.tabstop = 4
 opt.shiftwidth = 4
-opt.expandtab = true  -- expand tab to spaces
+opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 opt.cursorline = true
@@ -48,193 +48,193 @@ map("n", "<C-l>", "<C-w>l", { desc = "move window to left" })
 -- snacks keymaps
 -- top pickers and explorer
 map("n", "<leader><space>", function()
-    Snacks.picker.smart()
+	Snacks.picker.smart()
 end, { desc = "Smart Find Files" })
 map("n", "<leader>,", function()
-    Snacks.picker.buffers()
+	Snacks.picker.buffers()
 end, { desc = "Buffers" })
 map("n", "<leader>/", function()
-    Snacks.picker.grep()
+	Snacks.picker.grep()
 end, { desc = "Grep" })
 map("n", "<leader>:", function()
-    Snacks.picker.command_history()
+	Snacks.picker.command_history()
 end, { desc = "Command History" })
 map("n", "<leader>n", function()
-    Snacks.picker.notifications()
+	Snacks.picker.notifications()
 end, { desc = "Notification History" })
 map("n", "<leader>e", function()
-    Snacks.explorer()
+	Snacks.explorer()
 end, { desc = "File Explorer" })
 
 -- find
 map("n", "<leader>fb", function()
-    Snacks.picker.buffers()
+	Snacks.picker.buffers()
 end, { desc = "Buffers" })
 map("n", "<leader>fc", function()
-    Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
+	Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
 end, { desc = "Find Config File" })
 map("n", "<leader>ff", function()
-    Snacks.picker.files()
+	Snacks.picker.files()
 end, { desc = "Find Files" })
 map("n", "<leader>fg", function()
-    Snacks.picker.git_files()
+	Snacks.picker.git_files()
 end, { desc = "Find Git Files" })
 map("n", "<leader>fp", function()
-    Snacks.picker.projects()
+	Snacks.picker.projects()
 end, { desc = "Projects" })
 map("n", "<leader>fr", function()
-    Snacks.picker.recent()
+	Snacks.picker.recent()
 end, { desc = "Recent" })
 
 -- git
 map("n", "<leader>gb", function()
-    Snacks.picker.git_branches()
+	Snacks.picker.git_branches()
 end, { desc = "Git Branches" })
 map("n", "<leader>gl", function()
-    Snacks.picker.git_log()
+	Snacks.picker.git_log()
 end, { desc = "Git Log" })
 map("n", "<leader>gL", function()
-    Snacks.picker.git_log_line()
+	Snacks.picker.git_log_line()
 end, { desc = "Git Log Line" })
 map("n", "<leader>gs", function()
-    Snacks.picker.git_status()
+	Snacks.picker.git_status()
 end, { desc = "Git Status" })
 map("n", "<leader>gS", function()
-    Snacks.picker.git_stash()
+	Snacks.picker.git_stash()
 end, { desc = "Git Stash" })
 map("n", "<leader>gd", function()
-    Snacks.picker.git_diff()
+	Snacks.picker.git_diff()
 end, { desc = "Git Diff (Hunks)" })
 map("n", "<leader>gf", function()
-    Snacks.picker.git_log_file()
+	Snacks.picker.git_log_file()
 end, { desc = "Git Log File" })
 
 -- gh
 map("n", "<leader>gi", function()
-    Snacks.picker.gh_issue()
+	Snacks.picker.gh_issue()
 end, { desc = "GitHub Issues (open)" })
 map("n", "<leader>gI", function()
-    Snacks.picker.gh_issue({ state = "all" })
+	Snacks.picker.gh_issue({ state = "all" })
 end, { desc = "GitHub Issues (all)" })
 map("n", "<leader>gp", function()
-    Snacks.picker.gh_pr()
+	Snacks.picker.gh_pr()
 end, { desc = "GitHub Pull Requests (open)" })
 map("n", "<leader>gP", function()
-    Snacks.picker.gh_pr({ state = "all" })
+	Snacks.picker.gh_pr({ state = "all" })
 end, { desc = "GitHub Pull Requests (all)" })
 
 -- grep and search
 map("n", "<leader>sb", function()
-    Snacks.picker.lines()
+	Snacks.picker.lines()
 end, { desc = "Buffer Lines" })
 map("n", "<leader>sB", function()
-    Snacks.picker.grep_buffers()
+	Snacks.picker.grep_buffers()
 end, { desc = "Grep Open Buffers" })
 map("n", "<leader>sg", function()
-    Snacks.picker.grep()
+	Snacks.picker.grep()
 end, { desc = "Grep" })
 map({ "n", "x" }, "<leader>sw", function()
-    Snacks.picker.grep_word()
+	Snacks.picker.grep_word()
 end, { desc = "Visual selection or word" })
 map("n", '<leader>s"', function()
-    Snacks.picker.registers()
+	Snacks.picker.registers()
 end, { desc = "Registers" })
 map("n", "<leader>s/", function()
-    Snacks.picker.search_history()
+	Snacks.picker.search_history()
 end, { desc = "Search History" })
 map("n", "<leader>sa", function()
-    Snacks.picker.autocmds()
+	Snacks.picker.autocmds()
 end, { desc = "Autocmds" })
 map("n", "<leader>sc", function()
-    Snacks.picker.command_history()
+	Snacks.picker.command_history()
 end, { desc = "Command History" })
 map("n", "<leader>sC", function()
-    Snacks.picker.commands()
+	Snacks.picker.commands()
 end, { desc = "Commands" })
 map("n", "<leader>sd", function()
-    Snacks.picker.diagnostics()
+	Snacks.picker.diagnostics()
 end, { desc = "Diagnostics" })
 map("n", "<leader>sD", function()
-    Snacks.picker.diagnostics_buffer()
+	Snacks.picker.diagnostics_buffer()
 end, { desc = "Buffer Diagnostics" })
 map("n", "<leader>sh", function()
-    Snacks.picker.help()
+	Snacks.picker.help()
 end, { desc = "Help Pages" })
 map("n", "<leader>sH", function()
-    Snacks.picker.highlights()
+	Snacks.picker.highlights()
 end, { desc = "Highlights" })
 map("n", "<leader>si", function()
-    Snacks.picker.icons()
+	Snacks.picker.icons()
 end, { desc = "Icons" })
 map("n", "<leader>sj", function()
-    Snacks.picker.jumps()
+	Snacks.picker.jumps()
 end, { desc = "Jumps" })
 map("n", "<leader>sk", function()
-    Snacks.picker.keymaps()
+	Snacks.picker.keymaps()
 end, { desc = "Keymaps" })
 map("n", "<leader>sl", function()
-    Snacks.picker.loclist()
+	Snacks.picker.loclist()
 end, { desc = "Location List" })
 map("n", "<leader>sm", function()
-    Snacks.picker.marks()
+	Snacks.picker.marks()
 end, { desc = "Marks" })
 map("n", "<leader>sM", function()
-    Snacks.picker.man()
+	Snacks.picker.man()
 end, { desc = "Man Pages" })
 map("n", "<leader>sp", function()
-    Snacks.picker.lazy()
+	Snacks.picker.lazy()
 end, { desc = "Search for Plugin Spec" })
 map("n", "<leader>sq", function()
-    Snacks.picker.qflist()
+	Snacks.picker.qflist()
 end, { desc = "Quickfix List" })
 map("n", "<leader>sR", function()
-    Snacks.picker.resume()
+	Snacks.picker.resume()
 end, { desc = "Resume" })
 map("n", "<leader>su", function()
-    Snacks.picker.undo()
+	Snacks.picker.undo()
 end, { desc = "Undo History" })
 map("n", "<leader>uC", function()
-    Snacks.picker.colorschemes()
+	Snacks.picker.colorschemes()
 end, { desc = "Colorschemes" })
 
 -- lsp
 map("n", "gd", function()
-    Snacks.picker.lsp_definitions()
+	Snacks.picker.lsp_definitions()
 end, { desc = "Goto Definition" })
 map("n", "gD", function()
-    Snacks.picker.lsp_declarations()
+	Snacks.picker.lsp_declarations()
 end, { desc = "Goto Declaration" })
 map("n", "gr", function()
-    Snacks.picker.lsp_references()
+	Snacks.picker.lsp_references()
 end, { desc = "References", nowait = true })
 map("n", "gI", function()
-    Snacks.picker.lsp_implementations()
+	Snacks.picker.lsp_implementations()
 end, { desc = "Goto Implementation" })
 map("n", "gy", function()
-    Snacks.picker.lsp_type_definitions()
+	Snacks.picker.lsp_type_definitions()
 end, { desc = "Goto Type Definition" })
 map("n", "gai", function()
-    Snacks.picker.lsp_incoming_calls()
+	Snacks.picker.lsp_incoming_calls()
 end, { desc = "Calls Incoming" })
 map("n", "gao", function()
-    Snacks.picker.lsp_outgoing_calls()
+	Snacks.picker.lsp_outgoing_calls()
 end, { desc = "Calls Outgoing" })
 map("n", "<leader>ss", function()
-    Snacks.picker.lsp_symbols()
+	Snacks.picker.lsp_symbols()
 end, { desc = "LSP Symbols" })
 map("n", "<leader>sS", function()
-    Snacks.picker.lsp_workspace_symbols()
+	Snacks.picker.lsp_workspace_symbols()
 end, { desc = "LSP Workspace Symbols" })
 
 -- others
 map("n", "<leader>gg", function()
-    Snacks.lazygit()
+	Snacks.lazygit()
 end, { desc = "Lazygit" })
 map("n", "<leader>n", function()
-    Snacks.notifier.show_history()
+	Snacks.notifier.show_history()
 end, { desc = "Notification History" })
 map("n", "<c-/>", function()
-    Snacks.terminal.toggle()
+	Snacks.terminal.toggle()
 end, { desc = "Toggle Terminal" })
 
 -- trouble
@@ -242,56 +242,56 @@ map("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnost
 map("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer Diagnostics (Trouble)" })
 map("n", "<leader>cs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols (Trouble)" })
 map(
-    "n",
-    "<leader>cl",
-    "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
-    { desc = "LSP Definitions / references / ... (Trouble)" }
+	"n",
+	"<leader>cl",
+	"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+	{ desc = "LSP Definitions / references / ... (Trouble)" }
 )
 map("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
 map("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
 
 -- action
 map({ "n", "x" }, "<leader>ca", function()
-    require("tiny-code-action").code_action()
+	require("tiny-code-action").code_action()
 end, { desc = "Code Action" })
 -- plugins
 vim.pack.add({
-    -- colorscheme
-    { src = "https://github.com/catppuccin/nvim",               name = "catppuccin" },
+	-- colorscheme
+	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
 
-    -- tools
-    {
-        src = "https://github.com/nvim-mini/mini.nvim",
-        version = vim.version.range("*"),
-    },
-    {
-        src = "https://github.com/folke/snacks.nvim",
-    },
+	-- tools
+	{
+		src = "https://github.com/nvim-mini/mini.nvim",
+		version = vim.version.range("*"),
+	},
+	{
+		src = "https://github.com/folke/snacks.nvim",
+	},
 
-    -- LSP
-    { src = "https://github.com/neovim/nvim-lspconfig" },
-    { src = "https://github.com/mason-org/mason.nvim" },
-    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+	-- LSP
+	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/mason-org/mason.nvim" },
+	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
 
-    -- complete
-    {
-        src = "https://github.com/saghen/blink.cmp",
-        version = vim.version.range("1.*"),
-    },
+	-- complete
+	{
+		src = "https://github.com/saghen/blink.cmp",
+		version = vim.version.range("1.*"),
+	},
 
-    -- format
-    { src = "https://github.com/stevearc/conform.nvim" },
-    { src = "https://github.com/zapling/mason-conform.nvim" },
+	-- format
+	{ src = "https://github.com/stevearc/conform.nvim" },
+	{ src = "https://github.com/zapling/mason-conform.nvim" },
 
-    -- lint
-    { src = "https://github.com/mfussenegger/nvim-lint" },
-    { src = "https://github.com/rshkarin/mason-nvim-lint" },
+	-- lint
+	{ src = "https://github.com/mfussenegger/nvim-lint" },
+	{ src = "https://github.com/rshkarin/mason-nvim-lint" },
 
-    -- trouble
-    { src = "https://github.com/folke/trouble.nvim" },
+	-- trouble
+	{ src = "https://github.com/folke/trouble.nvim" },
 
-    -- action
-    { src = "https://github.com/rachartier/tiny-code-action.nvim" },
+	-- action
+	{ src = "https://github.com/rachartier/tiny-code-action.nvim" },
 })
 
 -- colorscheme
@@ -306,133 +306,135 @@ require("mini.comment").setup()
 
 -- snacks
 require("snacks").setup({
-    bigfile = { enabled = true },
-    explorer = { enabled = true },
-    indent = { enabled = true },
-    input = { enabled = true },
-    picker = { enabled = true },
-    notifier = { enabled = true },
-    quickfile = { enabled = true },
-    scope = { enabled = true },
-    scroll = { enabled = true },
-    words = { enabled = false },
-    lazygit = { enabled = true },
-    terminal = { enabled = true },
+	bigfile = { enabled = true },
+	explorer = { enabled = true },
+	indent = { enabled = true },
+	input = { enabled = true },
+	picker = { enabled = true },
+	notifier = { enabled = true },
+	quickfile = { enabled = true },
+	scope = { enabled = true },
+	scroll = { enabled = true },
+	words = { enabled = false },
+	lazygit = { enabled = true },
+	terminal = { enabled = true },
 })
 
 -- mason
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {
-        "lua_ls",
-        "clangd",
-        "pyright",
-        "rust_analyzer",
-        "ts_ls",
-        "html",
-        "cssls",
-        "jsonls",
-        "yamlls",
-        "bashls",
-        "vimls",
-        "taplo",
-        "marksman",
-    },
+	ensure_installed = {
+		"lua_ls",
+		"clangd",
+		"pyright",
+		"rust_analyzer",
+		"ts_ls",
+		"html",
+		"cssls",
+		"jsonls",
+		"yamlls",
+		"bashls",
+		"vimls",
+		"taplo",
+		"marksman",
+		"texlab",
+	},
 })
-
 
 -- blink.cmp
 require("blink.cmp").setup({
-    keymap = {
-        preset = "none",
+	keymap = {
+		preset = "none",
 
-        ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
-        ["<C-e>"] = { "hide", "fallback" },
+		["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+		["<C-e>"] = { "hide", "fallback" },
 
-        ["<Tab>"] = {
-            function(cmp)
-                if cmp.snippet_active() then
-                    return cmp.accept()
-                else
-                    return cmp.select_and_accept()
-                end
-            end,
-            "snippet_forward",
-            "fallback",
-        },
-        ["<S-Tab>"] = { "snippet_backward", "fallback" },
+		["<Tab>"] = {
+			function(cmp)
+				if cmp.snippet_active() then
+					return cmp.accept()
+				else
+					return cmp.select_and_accept()
+				end
+			end,
+			"snippet_forward",
+			"fallback",
+		},
+		["<S-Tab>"] = { "snippet_backward", "fallback" },
 
-        ["<Up>"] = { "select_prev", "fallback" },
-        ["<Down>"] = { "select_next", "fallback" },
-        ["<C-p>"] = { "select_prev", "fallback_to_mappings" },
-        ["<C-n>"] = { "select_next", "fallback_to_mappings" },
+		["<Up>"] = { "select_prev", "fallback" },
+		["<Down>"] = { "select_next", "fallback" },
+		["<C-p>"] = { "select_prev", "fallback_to_mappings" },
+		["<C-n>"] = { "select_next", "fallback_to_mappings" },
 
-        ["<C-b>"] = { "scroll_documentation_up", "fallback" },
-        ["<C-f>"] = { "scroll_documentation_down", "fallback" },
+		["<C-b>"] = { "scroll_documentation_up", "fallback" },
+		["<C-f>"] = { "scroll_documentation_down", "fallback" },
 
-        ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
-    },
-    sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
-    },
-    fuzzy = {
-        implementation = "lua",
-    },
+		["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
+	},
+	sources = {
+		default = { "lsp", "path", "snippets", "buffer" },
+	},
+	fuzzy = {
+		implementation = "lua",
+	},
 })
 
 -- conform
 require("conform").setup({
-    formatters_by_ft = {
-        lua = { "stylua" },
-        python = { "isort", "black" },
-        rust = { "rustfmt", lsp_format = "fallback" },
-        c = { "clang-format" },
-        cpp = { "clang-format" },
-        objc = { "clang-format" },
-        objcpp = { "clang-format" },
+	formatters_by_ft = {
+		lua = { "stylua" },
+		python = { "isort", "black" },
+		rust = { "rustfmt", lsp_format = "fallback" },
+		c = { "clang-format" },
+		cpp = { "clang-format" },
+		objc = { "clang-format" },
+		objcpp = { "clang-format" },
 
-        javascript = { "prettierd", "prettier", stop_after_first = true },
-        html = { "prettierd", "prettier", stop_after_first = true },
-        css = { "prettierd", "prettier", stop_after_first = true },
-        json = { "prettierd", "prettier", stop_after_first = true },
-        yaml = { "prettierd", "prettier", stop_after_first = true },
-        markdown = { "prettierd", "prettier", stop_after_first = true },
+		javascript = { "prettierd", "prettier", stop_after_first = true },
+		html = { "prettierd", "prettier", stop_after_first = true },
+		css = { "prettierd", "prettier", stop_after_first = true },
+		json = { "prettierd", "prettier", stop_after_first = true },
+		yaml = { "prettierd", "prettier", stop_after_first = true },
+		markdown = { "prettierd", "prettier", stop_after_first = true },
 
-        sh = { "shfmt" },
-        bash = { "shfmt" },
-        zsh = { "shfmt" },
-        toml = { "taplo" },
-    },
-    format_on_save = {
-        -- These options will be passed to conform.format()
-        timeout_ms = 500,
-        lsp_format = "fallback",
-    },
+		sh = { "shfmt" },
+		bash = { "shfmt" },
+		zsh = { "shfmt" },
+		toml = { "taplo" },
+		tex = { "tex-fmt" },
+	},
+	format_on_save = {
+		-- These options will be passed to conform.format()
+		timeout_ms = 500,
+		lsp_format = "fallback",
+	},
 })
 
 require("mason-conform").setup({})
 
 -- lint
 require("lint").linters_by_ft = {
-    lua = { "selene" },
-    python = { "ruff" },
-    javascript = { "eslint_d" },
-    markdown = { "vale" },
-    sh = { "shellcheck" },
-    bash = { "shellcheck" },
-    yaml = { "yamllint" },
-    json = { "jsonlint" },
-    vim = { "vint" },
+	lua = { "selene" },
+	python = { "ruff" },
+	javascript = { "eslint_d" },
+	markdown = { "markdownlint" },
+	sh = { "shellcheck" },
+	bash = { "shellcheck" },
+	yaml = { "yamllint" },
+	json = { "jsonlint" },
+	vim = { "vint" },
+	tex = { "proselint" },
 }
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
-    callback = function()
-        require("lint").try_lint()
-    end,
+	callback = function()
+		require("lint").try_lint()
+	end,
 })
 
 require("mason-nvim-lint").setup({
-    automatic_installation = true,
+	automatic_installation = true,
 })
 
 -- trouble
