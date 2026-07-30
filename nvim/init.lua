@@ -294,6 +294,31 @@ vim.pack.add({
 	{ src = "https://github.com/rachartier/tiny-code-action.nvim" },
 })
 
+-- Native plugin manager (Neovim 0.12+)
+-- Plugin actions open a review tab: use :write to apply updates or :quit to close it.
+local function active_plugin_names()
+	return vim
+		.iter(vim.pack.get(nil, { info = false }))
+		:filter(function(plugin)
+			return plugin.active
+		end)
+		:map(function(plugin)
+			return plugin.spec.name
+		end)
+		:totable()
+end
+
+local function manage_active_plugins(opts)
+	vim.pack.update(active_plugin_names(), opts)
+end
+
+map("n", "<leader>pu", function()
+	manage_active_plugins()
+end, { desc = "Update Plugins" })
+map("n", "<leader>pi", function()
+	manage_active_plugins({ offline = true })
+end, { desc = "Inspect Plugins" })
+
 -- colorscheme
 vim.cmd.colorscheme("catppuccin")
 
