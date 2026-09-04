@@ -297,8 +297,7 @@ vim.pack.add({
 -- Native plugin manager (Neovim 0.12+)
 -- Plugin actions open a review tab: use :write to apply updates or :quit to close it.
 local function active_plugin_names()
-	return vim
-		.iter(vim.pack.get(nil, { info = false }))
+	return vim.iter(vim.pack.get(nil, { info = false }))
 		:filter(function(plugin)
 			return plugin.active
 		end)
