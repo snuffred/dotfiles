@@ -11,17 +11,13 @@ return {
 			"lua_ls",
 			"clangd",
 			"pyright",
-			"rust_analyzer",
-			"ts_ls",
-			"html",
-			"cssls",
-			"jsonls",
-			"yamlls",
-			"bashls",
-			"vimls",
-			"taplo",
-			"marksman",
-			"texlab",
+		},
+		-- automatic_enable defaults to enabling every *installed* mason package, not just
+		-- the list above, so leftover servers would keep attaching. Pin it to an allowlist.
+		automatic_enable = {
+			"lua_ls",
+			"clangd",
+			"pyright",
 		},
 	},
 }
