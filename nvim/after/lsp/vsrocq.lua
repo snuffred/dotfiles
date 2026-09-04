@@ -24,7 +24,11 @@ return {
 			pointInterpretationMode = 0,
 		},
 		goals = { diff = { mode = "off" }, messages = { full = true }, ppmode = "Pp" },
-		-- VsRocq's own completion is experimental; blink.cmp handles completion.
+		-- VsRocq's completion is experimental and returns nothing in practice: tested at
+		-- tactic and term positions in a fully-checked buffer, with this flag both true
+		-- and false, and textDocument/completion came back with 0 items every time.
+		-- Left off so nothing pretends to work; Rocq buffers fall back to blink.cmp's
+		-- buffer/snippet sources. Flip to true if a future vsrocqtop implements it.
 		completion = { enable = false, algorithm = 1, unificationLimit = 100 },
 		diagnostics = { enable = true, full = false },
 		-- Gigabytes before vsrocqtop restarts itself.
