@@ -31,6 +31,9 @@ mason packages and must be on `PATH`:
 Formatting: `.stylua.toml` (tabs, 120 columns). Run `stylua .` with the mason-installed binary in
 `~/.local/share/nvim/mason/bin/`.
 
+Linting: `selene.toml` + `vim.yml`. Run `selene .` from this directory: selene reads its config from
+the cwd only, so `lua/plugins/lint.lua` passes `--config` for you inside Neovim.
+
 ## Keymap prefixes
 
 `<leader>` is Space, `<LocalLeader>` is `\`. Pause 300 ms after a prefix for the mini.clue hint

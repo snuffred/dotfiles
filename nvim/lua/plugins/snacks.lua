@@ -142,21 +142,25 @@ return {
 		{ "gI", pick("lsp_implementations"), desc = "Goto Implementation" },
 		{ "gy", pick("lsp_type_definitions"), desc = "Goto Type Definition" },
 
-		-- unprefixed: terminal
+		-- unprefixed: terminal. mode "t" as well: snacks opens the terminal in terminal-mode (its
+		-- interactive default) and lazy's keys are normal-mode only unless told otherwise, so the key that
+		-- opened the window could not hide it. toggle() hides the window but keeps the buffer and shell;
+		-- it re-derives the terminal id from v:count1 and getcwd(0) exactly like the normal-mode press.
 		{
 			"<c-/>",
 			function()
 				Snacks.terminal.toggle()
 			end,
+			mode = { "n", "t" },
 			desc = "Toggle Terminal",
 		},
-		-- legacy encoding of Ctrl+/: many terminals send 0x1f (<c-_>) without the kitty
-		-- keyboard protocol
+		-- legacy encoding of Ctrl+/: many terminals send 0x1f (<c-_>) without the kitty keyboard protocol
 		{
 			"<c-_>",
 			function()
 				Snacks.terminal.toggle()
 			end,
+			mode = { "n", "t" },
 			desc = "Toggle Terminal",
 		},
 	},
