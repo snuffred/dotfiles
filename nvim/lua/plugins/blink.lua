@@ -1,8 +1,9 @@
 return {
 	"saghen/blink.cmp",
 	version = "1.*",
-	-- no trigger of its own: lua/plugins/lsp.lua pulls it in as a dependency so that
-	-- its plugin/blink-cmp.lua injects LSP capabilities before vim.lsp.enable() runs
+	-- no trigger of its own: lua/plugins/lsp.lua (and lean.lua) pull it in as a dependency so that
+	-- its plugin/blink-cmp.lua injects LSP capabilities via vim.lsp.config("*") before any LSP
+	-- client starts
 	lazy = true,
 	opts = {
 		keymap = {
@@ -12,6 +13,12 @@ return {
 			["<C-e>"] = { "hide", "fallback" },
 
 			["<Tab>"] = {
+				-- accept() acts on the selected item only; select_and_accept() first selects item 1
+				-- when nothing is selected. With blink's defaults (completion.list.selection.preselect
+				-- = true, cycle.from_top/from_bottom = true, both unset here) item 1 is always
+				-- selected while the menu is open, so both branches behave identically today; the
+				-- snippet_active() split is kept so Tab still does the right thing if preselect is
+				-- ever turned off.
 				function(cmp)
 					if cmp.snippet_active() then
 						return cmp.accept()
@@ -31,8 +38,6 @@ return {
 
 			["<C-b>"] = { "scroll_documentation_up", "fallback" },
 			["<C-f>"] = { "scroll_documentation_down", "fallback" },
-
-			["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
 		},
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },

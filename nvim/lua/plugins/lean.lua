@@ -18,7 +18,9 @@ return {
 		vim.g.lean_config = {
 			-- <LocalLeader> mappings in Lean buffers -- \i toggles the infoview, \x pins a
 			-- goal, \r restarts the file -- plus K for the rich interactive hover.
-			-- maplocalleader is unset, so <LocalLeader> is backslash.
+			-- This is the top-level lean.Config.mappings boolean, NOT the deprecated
+			-- infoview.mappings table. ftplugin/lean/lean.lua tests `== true`, so anything other
+			-- than the literal true silently disables all of them.
 			mappings = true,
 		}
 	end,

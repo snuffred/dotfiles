@@ -26,6 +26,8 @@ A modular config using `lazy.nvim` featuring:
 - **UI:** `snacks.nvim` and `trouble.nvim` for a modern interface.
 - **Highlighting:** `nvim-treesitter` for robust syntax awareness.
 
+See [nvim/README.md](nvim/README.md) for requirements, layout and keymap prefixes.
+
 ## 📥 Installation
 
 1.  **Clone the repository:**

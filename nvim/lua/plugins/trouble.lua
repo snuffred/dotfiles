@@ -1,3 +1,6 @@
+-- Persistent, navigable lists. The <leader>s* snacks pickers reach the same data (diagnostics,
+-- loclist, quickfix, symbols, LSP locations) as transient fuzzy lists; trouble is for when the
+-- list should stay open. trouble is lazy (cmd + keys), so the overlap costs nothing at startup.
 return {
 	"folke/trouble.nvim",
 	cmd = "Trouble",
